@@ -22,5 +22,4 @@ public class Bycycle implements BycycleOperation,BycycleParts{
     public String bicycleDesc() {
         return("No of gears are "+ gears + ",Speed of bicycle is " + maxSpeed+"\n");
     }
-
 }

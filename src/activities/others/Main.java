@@ -1,3 +1,5 @@
+package activities.others;
+
 public class Main extends Animal{
     public void sound(){
         System.out.println("Bow bow");

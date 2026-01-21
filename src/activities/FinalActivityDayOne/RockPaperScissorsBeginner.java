@@ -11,7 +11,7 @@ public class RockPaperScissorsBeginner {
         while(true){
             Random rand = new Random();
             int compGuess = rand.nextInt(1,4);
-            System.out.println("""
+            System.out.print("""
                     ____________________
                          choose one
                     1. Rock

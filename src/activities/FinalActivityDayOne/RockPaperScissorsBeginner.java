@@ -1,7 +1,9 @@
+package activities.FinalActivityDayOne;
+
 import java.util.Random;
 import java.util.Scanner;
 
-public class RockPaperScissors {
+public class RockPaperScissorsBeginner {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the name : ");

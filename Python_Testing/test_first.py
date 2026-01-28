@@ -7,7 +7,7 @@ def test_sqrt():
 
 def testsquare():
    num = 7
-   assert num*num == 40
+   assert num*num == 49
 
-def tesequality():
+def testequality():
    assert 10 == 11

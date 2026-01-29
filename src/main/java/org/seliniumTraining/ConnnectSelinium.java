@@ -10,6 +10,7 @@ public class ConnnectSelinium {
 
         // Open the browser
         driver.get("https://training-support.net");
+        System.out.println(driver.getTitle());
 
         // Perform testing and assertions
 

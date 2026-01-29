@@ -17,7 +17,6 @@ public class ActivityOne {
 
         System.out.println("The Title of new Page is : " + driver.getTitle());
 
-        driver.close();
 
 
     }

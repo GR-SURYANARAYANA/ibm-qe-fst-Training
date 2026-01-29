@@ -18,7 +18,8 @@ public class ActivityThree {
             userName.sendKeys("admin");
             passwordElement.sendKeys("password");
 
-            WebElement submitButton = driver.findElement(By.xpath("//button[text()='Submit']"));
+//            WebElement submitButton = driver.findElement(By.xpath("//button[text()='Submit']"));
+            WebElement submitButton = driver.findElement(By.xpath("//form//button"));
             submitButton.click();
             System.out.println("Click is done sucessfull");
             System.out.println("The new title of the page is : "+ driver.getTitle());

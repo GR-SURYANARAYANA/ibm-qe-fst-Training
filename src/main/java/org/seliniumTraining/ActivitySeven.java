@@ -16,6 +16,7 @@ public class ActivitySeven {
 
         System.out.println("Start the click Button..!!");
         WebElement  inputTextButton = driver.findElement(By.xpath("//button[@id = 'textInputButton']"));
+        System.out.println(inputTextButton.getDomAttribute("class"));
         inputTextButton.click();
 
         System.out.println("After clicking the button: ");
@@ -24,7 +25,7 @@ public class ActivitySeven {
         inputTextBox.sendKeys("Hello...!! G R Suryanarayana ");
 
         inputTextButton.click();
-        System.out.println("Sucessfully done..!!");
+        System.out.println("Sucessfully done..!! ");
 
         driver.close();
 

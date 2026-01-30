@@ -22,7 +22,7 @@ public class ActivityTen {
         System.out.println("Status of zone One  : "+dropZoneOne.getText());
         System.out.println("Status of zone Two  : "+dropZoneTwo.getText());
         toPerform.perform();
-
+        driver.close();
 
 
     }

@@ -13,6 +13,8 @@ public class ActivityNine {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://training-support.net/webelements/keyboard-events");
         System.out.println("The title of the Page is "+driver.getTitle());
+        WebElement trapElement = driver.findElement(By.xpath("//p[@id = 'result']"));
+        System.out.println(trapElement.getText());
 //        WebElement textElement = driver.findElement(By.xpath("//span[text() = '|']"));
 //        WebElement textElement = driver.findElement(By.xpath("//span[text()='|']//.."));
 //        textElement.sendKeys("hello");Keys("Hi Suryanarayana..!! How are you Today? Welcome to this page ").sendKeys(Keys.RETURN).build().perform();
@@ -21,5 +23,6 @@ public class ActivityNine {
 //        Action toPerform = builder.sendKeys(textElement,"Hi Suryanarayana..!! How are you Today? Welcome to this page ").sendKeys(Keys.RETURN).build();
 
 //        toPerform.perform();
+        driver.close();
     }
 }

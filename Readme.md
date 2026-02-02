@@ -1,11 +1,24 @@
+Activity 1
+Clicking a Link
 
+* Open the training support site. (https://training-support.net)
+* Print the title of the page
+* Click the about us button
+* Print the title of the new page
 
+Activity 2
+Sending Input
 
+* Open a new browser to https://training-support.net/webelements/login-form/
+* Get the title of the page and print it to the console.
+* Find the username field using any locator and enter "admin" into it.
+* Find the password field using any locator and enter "password" into it.
+* Find the "Log in" button using any locator and click it.
+* Close the browser.
 
 
 Activity 21
 Multiple Tabs
-Using Selenium:
 * Open a new browser to https://training-support.net/webelements/tabs
 * Get the title of the page and print it to the console.
 * Find the button to open a new tab and click it.

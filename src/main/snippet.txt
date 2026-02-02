@@ -13,9 +13,31 @@ dismiss() - To dismiss the alert. Same as clicking "Cancel"
 getText() - To get the text of the alert
 sendKeys() -To write some text to the alert
 
-// To switch focus to the alert box, use driver.switchTo().alert()
+To switch focus to the alert box, use driver.switchTo().alert()
+Snippet:
 driver.findElement(By.id("alert-button")).click();
 wait.until(ExpectedConditions.alertIsPresent());
 Alert alert = driver.switchTo().alert();
 System.out.println(alert.getText());
 alert.accept();
+
+
+Handling Multiple Windows/Tabs
+Clicking a link which opens in a new window will focus the new window or tab on screen, but WebDriver will not know which window the operating system considers active.
+
+
+use driver.getWindowHandles() to obtain a list containing the handles of all the currently open tabs/windows.
+use driver.switchTo().window(<handle>) to switch the driver's focus to that tab
+
+snippet:
+driver.get("https://training-support.net/webelements/tabs");
+String parentHandle = driver.getWindowHandle();
+driver.findElement(By.id("launcher")).click();
+wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+Set<String> handles = driver.getWindowHandles();
+for(String handle : handles) {
+    if (handle != parentHandle) {
+        driver.switchTo().window(handle);
+    }
+}
+wait.until(ExpectedConditions.titleIs("Newtab"));

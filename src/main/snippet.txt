@@ -12,21 +12,10 @@ accept() - To accept the alert. Same as clicking "OK"
 dismiss() - To dismiss the alert. Same as clicking "Cancel"
 getText() - To get the text of the alert
 sendKeys() -To write some text to the alert
-To switch focus to the alert box, use driver.switchTo().alert()
 
-
-
-// Click the button that triggers the alert
+// To switch focus to the alert box, use driver.switchTo().alert()
 driver.findElement(By.id("alert-button")).click();
-
-// Wait for the alert to be displayed
 wait.until(ExpectedConditions.alertIsPresent());
-
-// Store the alert in a variable
 Alert alert = driver.switchTo().alert();
-
-// Print the text from the alert
 System.out.println(alert.getText());
-
-// Click the OK button on the alert
 alert.accept();

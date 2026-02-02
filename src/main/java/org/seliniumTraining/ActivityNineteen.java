@@ -14,7 +14,8 @@ public class ActivityNineteen {
         confirmation.click();
         Alert alert = driver.switchTo().alert();
         System.out.println(alert.getText());
-        alert.accept();
+//        alert.accept();
+        alert.dismiss();
         driver.close();
 
     }

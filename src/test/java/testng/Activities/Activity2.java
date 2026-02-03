@@ -37,7 +37,6 @@ public class Activity2 {
     public void skipTests(){
         System.out.println("test case is skipped..!! ");
     }
-
     @Test
     public void skipExceptionCheck() throws SkipException{
 //        String title = driver.getTitle();

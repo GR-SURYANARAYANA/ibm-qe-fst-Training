@@ -4,8 +4,7 @@
     <test name="Practice Grouping">
         <groups>
             <run>
-                <include name="ButtonTest" />
-                <include name="title" />
+                <exclude name="title"></exclude>
             </run>
         </groups>
         <classes>

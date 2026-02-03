@@ -4,11 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.awt.*;
 
 public class Activity5 {
 
@@ -34,24 +35,25 @@ public class Activity5 {
     }
 
     @Test(groups = {"ButtonTest"})
+    public void headerTest2(){
+        WebElement elementColor = driver.findElement(By.xpath("//h5"));
+        String color = elementColor.getCssValue("color");
+        Assert.assertEquals(color,"rgb(147, 51, 234)");
+    }
+
+    @Test(groups = {"HeaderTest"})
     public void buttonTest(){
-        String text = "emrald";
+        String text = "Emerald";
         WebElement buttonEle = driver.findElement(By.xpath("//button[contains(@class,'emerald')]"));
         Assert.assertEquals(buttonEle.getText(),text);
     }
-    @Test(dependsOnMethods = { "pageTitleTest" }, groups = { "ButtonTests" })
-    public void ButtonTest1() {
-        WebElement button1 = driver.findElement(By.xpath("//button[contains(@class, 'emerald')]"));
-        Assert.assertEquals(button1.getText(), "Emerald");
+
+    @Test(groups = {"ButtonTest"})
+    public void buttonTest1(){
+        WebElement elementColor = driver.findElement(By.xpath("//button[contains(text(),'Purple')]"));
+        String color = elementColor.getCssValue("color");
+        Assert.assertEquals(color,"rgb(88, 28, 135)");
     }
-
-    @Test(dependsOnMethods = { "pageTitleTest" }, groups = { "ButtonTests" })
-    public void ButtonTest2() {
-        Color button2Color = Color.fromString(driver.findElement(By.xpath("//button[contains(@class, 'purple')]")).getCssValue("color"));
-        Assert.assertEquals(button2Color.asHex(), "#581c87");
-    }
-
-
 
     @AfterClass(alwaysRun = true)
     public void endUp(){

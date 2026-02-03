@@ -14,4 +14,3 @@
     * Head over to extension and download `TestNg TestSuit Runner`
     * Run it through `cmd` prompt in vs code itself not with `vs terminal` powershell
     * Then left click on the file to run it Sucessfully.
-

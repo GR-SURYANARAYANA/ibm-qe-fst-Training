@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTraining"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.240">
+    <properties></properties>
+
+
+
+            <testcase
+                name="promptAlertTestCase"
+                time="0.432"
+                classname="testng.Activities.Activity9">
+            </testcase>
+            <testcase
+                name="confirmAlertTestCase"
+                time="0.286"
+                classname="testng.Activities.Activity9">
+            </testcase>
+            <testcase
+                name="simpleAlertTestCase"
+                time="0.522"
+                classname="testng.Activities.Activity9">
+            </testcase>
+</testsuite>

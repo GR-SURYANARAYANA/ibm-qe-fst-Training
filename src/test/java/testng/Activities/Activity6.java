@@ -8,8 +8,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.time.Duration;
-import java.util.Objects;
 
 public class Activity6 {
     WebDriver driver;
@@ -19,7 +17,7 @@ public class Activity6 {
         driver = new FirefoxDriver();
         driver.get("https://training-support.net/webelements/login-form");
     }
-    @Test(enabled = true)
+    @Test()
     @Parameters({"userName","password"})
     public void parameterMethod1(String username,String password){
         WebElement userField = driver.findElement(By.xpath("//input[1]"));

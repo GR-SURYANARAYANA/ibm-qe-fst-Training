@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestNGTraining"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.519">
+    <properties></properties>
+
+
+
+            <testcase
+                name="registerTest"
+                time="0.925"
+                classname="testng.Activities.Activity10">
+            </testcase>
+            <testcase
+                name="registerTest"
+                time="0.774"
+                classname="testng.Activities.Activity10">
+            </testcase>
+            <testcase
+                name="registerTest"
+                time="0.820"
+                classname="testng.Activities.Activity10">
+            </testcase>
+</testsuite>

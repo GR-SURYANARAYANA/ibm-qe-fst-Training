@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Activity6"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.101">
+    <properties></properties>
+
+
+
+            <testcase
+                name="contactUS"
+                time="3.101"
+                classname="Activities.Activity8">
+            </testcase>
+</testsuite>

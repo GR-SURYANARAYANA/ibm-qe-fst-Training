@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Activity6"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.350">
+    <properties></properties>
+
+
+
+            <testcase
+                name="isCourseAvailable"
+                time="3.249"
+                classname="Activities.Activity7">
+            </testcase>
+            <testcase
+                name="getCourses"
+                time="0.101"
+                classname="Activities.Activity7">
+            </testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Activity6"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.564">
+    <properties></properties>
+
+
+
+            <testcase
+                name="Login"
+                time="1.564"
+                classname="Activities.Activity6">
+            </testcase>
+</testsuite>

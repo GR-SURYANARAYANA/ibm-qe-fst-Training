@@ -5,12 +5,12 @@
         <groups>
             <run>
                 <include name="Activity1" />
-                <include name="Activity7" />
+                <include name="Activity8" />
             </run>
         </groups>
         <classes>
             <class name="Activities.Activity1" />
-            <class name="Activities.Activity7" />
+            <class name="Activities.Activity8" />
         </classes>
     </test>
 </suite>

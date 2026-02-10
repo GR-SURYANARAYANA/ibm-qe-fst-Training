@@ -1,4 +1,4 @@
-import Activities.BaseClass;
+package Activities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

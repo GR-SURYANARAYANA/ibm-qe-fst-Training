@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Activity6 extends BaseClass {
+public class Activity5 extends BaseClass {
 
-    @Test(groups= {"Activity6"}, dependsOnGroups = {"Activity1"})
+    @Test(groups= {"Activity5"}, dependsOnGroups = {"Activity1"})
     public void navigateNewPage(){
         String expectedPageTitle = "My Account – Alchemy LMS";
         WebElement element = driver.findElement(By.xpath("//li[contains(@id,'-1507')]"));
@@ -14,5 +14,4 @@ public class Activity6 extends BaseClass {
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedPageTitle);
     }
-
 }
